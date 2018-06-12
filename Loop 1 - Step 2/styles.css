@@ -1,0 +1,123 @@
+.body {
+	font-family: Roboto, sans-serif;
+	background: url('img/background.jpg') center /cover no-repeat;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.block {
+	width: 350px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.block__title {
+	text-transform: uppercase;
+	font-size: 22px;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+/* balls */
+
+.block__balls {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+}
+
+.block__ball {
+	border-radius: 100%;
+	border: 3px solid #ddd;
+	margin-right: 10px;
+}
+
+.block__ball:last-child {
+	margin: 0;
+}
+
+.block__ball_active {
+	border-color: #999;
+}
+
+/* methods */
+
+.block__method {
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #999;
+	color: #999;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	padding: 20px;
+	position: relative;
+}
+
+.block__method:hover {
+	cursor: pointer;
+	background: #ddd;
+}
+
+.block__method_active {
+	color: #000;
+}
+
+.block__method_active:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 40%;
+	right: 20px;
+	background: url('img/check.svg') center 100% no-repeat;
+	width: 20px;
+	height: 20px;
+}
+
+.block__img {
+	width: 50px;
+	height: 25px;
+	padding-right: 20px;
+}
+
+/* btn */
+
+.block__btn {
+	padding: 15px 0;
+	color: #fff;
+	background: #5572d6;
+	border: 0;
+	border-radius: 0 0 4px 4px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.block__btn:hover {
+	background: #85a5d4;
+}
+
+.block__btn:active {
+	margin-top: 3px;
+}
+
+.block__arrow {
+	padding-left: 5px;
+	height: 15px;
+}

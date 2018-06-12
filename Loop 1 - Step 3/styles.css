@@ -1,0 +1,91 @@
+.body {
+	font-family: Roboto, sans-serif;
+	background: #00897B;
+	margin: 0;
+	padding: 0;
+}
+
+.block {
+	width: 450px;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding: 60px;
+	background-color: #fff;
+	background-image: url('img/bicycle.png');
+	background-position: 50% -500%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.block__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+}
+
+.block__title {
+	margin: 0;
+	padding: 0;
+	color: #555;
+	font-weight: 700;
+}
+
+.block__title_main {
+	font-size: 24px;
+	color: #000;
+}
+
+.block__title_item {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.block__title_total {
+	text-transform: uppercase;
+}
+
+.block__price {
+	font-weight: 700;
+	font-size: 20px;
+	color: #000;
+	margin: 0;
+}
+
+.block__descr {
+	font-weight: 500;
+	font-size: 14px;
+	color: #ccc;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.block__icon {
+	height: 24px;
+	width: 24px;
+	padding: 5px;
+	border-radius: 50%;
+	border: 1px solid #555;
+	position: relative;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.block__icon:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    padding: 17px;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    transition: visibility .1s;
+}
+
+.block__icon:hover:after {
+	visibility: visible;
+}
