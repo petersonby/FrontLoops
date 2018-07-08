@@ -1,0 +1,108 @@
+body {
+	height: 100vh;
+	margin: 0;
+	background: url('img/background.jpg') no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flight {
+	background-color: #fff;
+	padding: 40px; 
+	width: 300px;
+	border-radius: 3px;
+}
+
+.flight__name {
+	display: flex;
+	flex: 1 1 33.33%;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
+.flight__country_right {
+	text-align: right;
+}
+
+.flight__part {
+	text-transform: uppercase;
+	font-family: 'Prompt';
+	font-weight: 900;
+	font-size: 48px;
+	color: #3300ff;
+	margin: 0;
+}
+
+.flight__full {
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 14px;
+	color: #bbb;
+	margin: 0;
+	flex-basis: 33%;
+}
+
+.flight__dash {
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dash {
+	width: 25px;
+	height: 5px;
+	background: #3300ff;
+	display: block;
+}
+
+.flight__about {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flight__about_v {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.flight__second-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flight__info {
+	margin-right: 60px;
+	margin-bottom: 20px;
+}
+
+.flight__info_last {
+	margin-bottom: 0;
+}
+.flight__title {
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 12px;
+	color: #bbb;
+	padding-bottom: 3px;
+}
+
+.flight__descr {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 14px;
+	color: #000;
+}
+
+
+.flight__img {
+	height: 140px;
+}
+.flight__qr {
+	width: 140px;
+}
