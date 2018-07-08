@@ -1,0 +1,119 @@
+body {
+	font-family: Roboto, sans-serif;
+	margin: 0;
+	padding: 20px 0;
+	height: 100vh;
+	box-sizing: border-box;
+	background-color: #4d515d;
+}
+
+.sign-box {
+	width: 1050px;
+	margin: auto;
+	background: url(img/side.jpg);
+	background-color: #fff;
+	background-size: 400px 100%;
+	background-position: right;
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sign-box__card {
+	padding: 80px 60px;
+	width: 650px;
+	box-sizing: border-box;
+}
+
+.sign-box__title {
+	font-weight: 300;
+	font-size: 40px;
+	color: #000;
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.sign-box__subtext {
+	font-weight: 400;
+	font-size: 14px;
+	color: #aaa;
+	margin: 0;
+	margin-bottom: 60px;
+}
+
+.sign-box__string {
+	margin: 0;
+}
+
+.signup__button {
+	background: #fff;
+	border: 1px solid #eee;
+	margin-bottom: 20px;
+	padding: 20px;
+	width: 100%;
+	cursor: pointer;
+	font-family: Roboto, sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	color: #8b8b8c;
+	text-transform: uppercase;
+	position: relative;
+	transition: .3s;
+}
+
+.signup__button:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	color: #000;
+}
+
+.signup__button:last-child {
+	margin: 0;
+}
+
+.signup__button:before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 16px;
+}
+
+.signup__button_google:before {
+	background: url('img/googleplus.svg') no-repeat;
+}
+
+.signup__button_facebook:before {
+	background: url('img/facebook.svg') no-repeat;
+}
+
+.signup__button_twitter:before {
+	background: url('img/twitter.svg') no-repeat;
+}
+
+
+.sign-box__footer {
+	border-top: 1px solid #eee;
+	width: 650px;
+	padding: 40px 60px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	font-weight: 500;
+	color: #000;
+}
+
+.sign-box__link:link, .sign-box__link:visited{
+	font-weight: 700;
+	font-size: 12px;
+	color: #8b8b8c;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .3s;
+}
+
+.sign-box__link:hover {
+	color: #000;
+}
