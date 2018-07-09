@@ -1,0 +1,156 @@
+body {
+	margin: 0;
+	background-color: #f7cd75;
+	padding: 80px 0;
+	font-family: Roboto, sans-serif;
+}
+
+.cardbox {
+	width: 800px;
+	height: 450px;
+	margin: auto;
+	background-color: #fff;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	display: flex;
+}
+
+.cardbox__gray {
+	width: 300px;
+	height: 450px;
+	overflow: auto;
+	padding: 40px;
+	box-sizing: border-box;
+	background-color: #f2f2f2;
+}
+
+.cardbox__gray-top {
+	margin-bottom: 40px;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cardbox__title {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 400; 
+	color: #000;
+}
+
+.cards__item {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	padding-top: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	transition: .3s;
+}
+
+.cards__item_active, .cards__item:hover {
+	border: 3px solid #8793c6;
+}
+
+.cards__item:last-child {
+	margin-bottom: 0;
+}
+
+.cards__img {
+	width: 55px;
+	object-fit: contain;
+	margin-bottom: 10px;
+}
+
+.cards__number {
+	color: #777;
+	font-weight: 500;
+	font-size: 16px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.cards__valid {
+	margin: 0;
+	color: #777;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.cardbox__white {
+	width: 500px;
+	height: 450px;
+	overflow-y: auto;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.cardbox__white-top {
+	padding-bottom: 40px;
+	border-bottom: 2px solid #ddd;
+}
+
+.cardbox__balance {
+	color: #000;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.cardbox__operation {
+	padding-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cardbox__operation-left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.cardbox__operation-type {
+	background: url('img/minus.svg') no-repeat;
+	background-size: 50%;
+	background-position: center;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	display: block;
+	margin-right: 30px;
+}
+
+.cardbox__operation-type_plus {
+	background: url('img/plus.svg') no-repeat;
+	background-size: 50%;
+	background-position: center;
+}
+
+.cardbox__operation-title {
+	margin: 0;
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #000;
+}
+
+.cardbox__operation-subtitle {
+	margin: 0;
+	font-weight: 500;
+	font-size: 14px;
+	color: #ddd;
+}
+
+.cardbox__operation-cost {
+	color: #8793c6;
+	font-weight: 700;
+	font-size: 18px;
+}
+.cardbox__operation-cost_type-plus {
+	color: #8ace5e;
+}
