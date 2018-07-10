@@ -1,0 +1,281 @@
+body {
+	margin: 0;
+	background: #fff;
+	font-family: Roboto, sans-serif;
+}
+
+.container {
+	width: 900px;
+	margin: auto;
+}
+
+.header {
+	margin: 0;
+	margin-top: 50px;
+}
+
+.header__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo__img {
+	width: 20px;
+	height: 100%;
+}
+
+.header__menu, .menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.menu {
+	list-style-type: none;
+}
+
+.menu__item {
+	margin-right: 30px;
+}
+
+.menu__item:last-child {
+	margin-right: 40px;
+}
+
+.menu__link:link, .menu__link:visited {
+	font-weight: 500;
+	font-size: 14px;
+	color: #999;
+	transition: .3s;
+	text-decoration: none;
+	position: relative;
+}
+
+.menu__link:focus, .menu__link:hover {
+	color: #000;
+	outline: none;
+}
+
+.menu__link:after {
+	content: '';
+	display: block;
+	opacity: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #999;
+	transition: .3s;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+}
+
+.menu__link:hover:after {
+	opacity: 1;
+}
+
+.search {
+	border: none;
+	border-bottom: 1px solid #999;
+	font-family: Roboto, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: #999;
+	outline: none;
+	padding: 0;
+	padding-bottom: 5px;
+	margin-top: 7px;
+	transition: .3s;
+}
+
+.search:hover, .search:focus {
+	border-bottom: 1px solid #333;
+}
+
+.first {
+	padding-top: 150px;
+	padding-bottom: 230px;
+	background: url('../img/watches.jpg');
+	background-color: #fff;
+	background-size: contain;
+	background-position-x: 150%;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #ccc;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 40px;
+	color: #333;
+	margin: 0;
+	margin-bottom: 50px;
+	width: 305px;
+}
+
+.subtitle {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #999;
+	margin-bottom: 40px;
+	padding-left: 30px;
+	width: 370px;
+	position: relative;
+}
+
+.subtitle:before {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 2px;
+	background-color: #999;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: #ea625c;
+	transition: .3s;
+	font-family: Roboto, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.button:hover, .button:focus {
+	background-color: #ea4e47;
+}
+
+.second {
+	padding: 40px 0;
+}
+
+.advantages {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 100px;
+}
+
+.advantages__item {
+	flex: 0 1 250px;
+}
+
+.advantages__title {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	margin-bottom: 40px;
+	color: #000;
+}
+
+.advantages__descr {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.advantages__more-line {
+	display: block;
+	height: 2px;
+	width: 30px;
+	background-color: #ea625c;
+	margin-right: 20px;
+	transition: .3s;
+}
+
+.advantages__more-squares {
+	height: 3px;
+	width: 3px;
+	background-color: #999;
+	margin-left: 12px;
+	position: relative;
+}
+
+.advantages__more-squares:before,
+.advantages__more-squares:after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 3px;
+	background-color: #999;
+	position: absolute;
+	top: 0;
+	left: -12px;
+}
+
+.advantages__more-squares:after {
+	left: 12px;
+}
+
+.advantages__more {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.advantages__more:link, .advantages__more:visited {
+	font-weight: 700;
+	font-size: 14px;
+	color: #ea625c;
+	transition: .3s;
+	text-decoration: none;
+	text-transform: uppercase;
+	outline: none;
+}
+
+.advantages__more:focus, .advantages__more:hover {
+	color: #ea4e47;
+}
+
+.advantages__more:hover .advantages__more-line {
+	width: 45px;
+	background-color: #ea4e47;
+}
+.second__screen {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.second__screen-img {
+	width: 400px;
+	height: 600px;
+}
+
+.third {
+	padding: 210px 0;
+	background: url('../img/runners.jpg') no-repeat;
+	background-size: cover;
+	background-position-y: center;
+}
+
+.third__container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.third__screen {
+	width: 40%;
+}
+
+.third__title, .third__subtitle {
+	color: #fff;
+}
+
+.third__title {
+	width: 365px;
+}
+
+.third__subtitle:before {
+	background-color: #fff;
+}
