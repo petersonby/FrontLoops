@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	padding-top: 80px;
+	background-color: #55557e;
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+}
+
+.header {
+	margin: auto;
+	width: 375px;
+	margin-bottom: 20px;
+}
+
+.header__menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header__menu-item:first-child {
+	margin-right: 1px;
+}
+
+.header__menu-item:last-child {
+	margin-left: 1px;
+}
+
+.header__menu-img {
+	width: 25px;
+	height: 25px;
+	padding: 20px 30px;
+	background: #252525;
+	opacity: .5;
+	transition: .3s;
+}
+
+.header__menu-img:hover {
+	opacity: .8;
+}
+
+.header__menu-img_active {
+	width: 35px;
+	object-fit: cover;
+	opacity: 1;
+	z-index: 2;
+	padding: 30px 35px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header__menu-img_active:hover {
+	opacity: 1;
+	cursor: default;
+}
+
+.food {
+	margin: auto;
+	width: 300px;
+	background: url('img/food.jpg') no-repeat;
+	background-size: 300px 150px;
+	background-position: top;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.food__header {
+	height: 150px;
+	padding: 20px;
+	background: rgba(85, 85, 126, .3);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.food__title {
+	color: #fff;
+	font-weight: 500;
+	font-size: 28px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.food__img-location {
+	height: 15px;
+	object-fit: contain;
+	margin-right: 3px;
+}
+
+.food__address {
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.food__menu {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.food__item {
+	border-bottom: 1px solid #dedede;
+}
+
+.food__item:last-child {
+	border: none;
+}
+
+.food__link {
+	text-decoration: none;
+	color: #aaa;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.food__menu-price {
+	z-index: 5;
+	transition: .3s;
+	position: absolute;
+	right: 20px;
+}
+
+.food__item:hover .food__menu-price {
+	font-size: 1.2em;
+	color: #222;
+}
