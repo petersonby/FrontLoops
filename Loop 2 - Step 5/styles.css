@@ -1,0 +1,138 @@
+body {
+	height: 100vh;
+	margin: 0;
+	background: url('img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh;
+}
+
+.main:before {
+	content: '';
+	display: block;
+	background: #f3cd2c;
+	opacity: .8;
+	width: 600px;
+	height: 100vh;
+	position: relative;
+	right: -160px;
+	transform: skew(-12deg);
+}
+
+.main__inner {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	width: 360px;
+	text-align: right;
+}
+
+.main__number,
+.main__title {
+	font-weight: 400;
+	font-size: 96px;
+	color: #000;
+	margin: 0;
+}
+
+.main__title {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	position: absolute;
+	bottom: 20px;
+	padding: 0 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.font {
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: uppercase;
+	position: relative;
+	cursor: pointer;
+}
+
+.font-white {
+	color: #fff;
+}
+
+.font-black {
+	color: #000;
+}
+
+.header__up {
+	margin-top: 20px;
+}
+
+.header__read {
+	margin-right: 20px;
+}
+
+.footer__down {
+	margin-bottom: 20px;
+}
+
+.header__up:before,
+.header__read:before,
+.footer__down:before,
+.footer__views:before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}
+
+.header__up:before {
+	background: url('img/up.svg') no-repeat;
+	top: -27px;
+    left: -7px;
+}
+
+.header__read:before {
+	background: url('img/more.svg') no-repeat;
+    right: -27px;
+    top: -2px;
+}
+
+.footer__down:before {
+	background: url('img/down.svg') no-repeat;
+    bottom: -27px;
+    left: -7px;
+}
+
+.footer__views:before {
+	background: url('img/view.svg') no-repeat;
+	width: 30px;
+    left: -37px;
+    top: -2px;
+}
