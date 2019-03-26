@@ -1,0 +1,129 @@
+*,*::before,*::after {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	background: #78accd;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calendar {
+	background-color: #fff;
+	width: 400px;
+	height: 420px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.calendar__header,
+.calendar__footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.calendar__header-text {
+	font-weight: 500;
+	font-size: 16px;
+	color: #7d8994;
+}
+
+.calendar__main {
+	padding: 25px 35px;
+	display: grid;
+	grid-template-columns: repeat(7, 30px);
+	grid-gap: 20px;
+	align-content: center;
+	align-items: center;
+}
+
+.calendar__day {
+	font-weight: 700;
+	font-size: 14px;
+	color: #7d8994;
+	text-transform: uppercase;
+}
+
+.dates__item {
+	text-align: center;
+	font-weight: 500;
+	font-size: 14px;
+	color: #000;
+}
+
+.dates__last-month {
+	color: #eee;
+}
+
+.dates__today {
+	color: #fff;
+	background: #de6e46;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dates__events {
+	border: 2px solid #de6e46;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.dates__events::before {
+	content: '6';
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #de6e46;
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	font-size: 10px;
+	color: #fff
+}
+
+.dates__events_purple {
+	border: 2px solid #ae5989;
+}
+.dates__events_purple::before {
+	content: '5';
+	background-color: #ae5989;
+}
+
+.calendar__footer {
+	border-bottom: none;
+	border-top: 1px solid #eee;
+}
+
+.calendar__footer-text {
+	font-weight: 700;
+	font-size: 14px;
+	color: #000;
+}
+
+.btn {
+	padding: 8px 12px;
+	border-radius: 50%;
+	border: 2px solid #de6e46;
+	background-color: transparent;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	color: #000;
+	cursor: pointer;
+}
