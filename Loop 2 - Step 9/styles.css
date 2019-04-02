@@ -1,0 +1,246 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #4677F6;
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.nav {
+  margin: auto;
+  background-color: #fff;
+  width: 450px;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.btn {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.burger {
+  width: 24px;
+  height: 24px;
+  background: url('./img/menu.svg') no-repeat center /cover;
+  opacity: 0.3;
+  transition: opacity .3s ease;
+}
+
+.burger:hover {
+  opacity: 1;
+}
+
+.search {
+  width: 24px;
+  height: 24px;
+  background: url('./img/search.svg') no-repeat center /cover;
+  opacity: 0.3;
+  transition: opacity .3s ease;
+}
+
+.search:hover {
+  opacity: 1;
+}
+
+.title {
+  margin: 0;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.way {
+  width: 470px;
+  height: 145px;
+  background: url('./img/map.png') no-repeat center /cover;
+  box-shadow: 
+    inset 0 0 0 73px rgba(70, 119, 246, 0.7),
+    0 15px 20px -10px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  margin-left: -10px;
+  position: relative;
+  color: #fff;
+  padding: 40px 40px 0;
+  margin-bottom: 40px;
+}
+
+.way__distance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.distance__text {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.line {
+  width: 220px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.line__bar {
+  width: 66px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+}
+
+.line::before,
+.line::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -2.5px;
+}
+
+.line::before {
+  left: 0;
+}
+
+.line::after {
+  right: 0;
+}
+
+.line__bar::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -9px;
+  top: -23px;
+  width: 18px;
+  height: 18px;
+  background: url('./img/car.svg') no-repeat center /cover;
+}
+
+.way__open {
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+  width: 125px;
+  height: 40px;
+  background-color: #4677F6;
+  border-radius: 3px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .3s ease;
+}
+
+.way__open:hover {
+  background-color: #648EF9;
+}
+
+.way__open::before {
+  content: '';
+  display: block;
+  width: 13px;
+  height: 18px;
+  background: url('./img/location.svg') no-repeat center /cover;
+  margin-right: 10px;
+}
+
+.way__info {
+  display: flex;
+}
+
+.way__info p {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.way__info p:first-child {
+  margin-right: 90px;
+}
+
+.way__info span {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav__main {
+  padding: 0 0 30px 20px;
+}
+
+.subtitle {
+  margin: 0 0 30px 10px;
+  font-weight: 700;
+  color: #000;
+  font-size: 16px;
+}
+
+.nav__item {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.nav__item:last-child {
+  margin-bottom: 0;
+}
+
+.nav__icon {
+  margin-right: 30px;
+  width: 24px;
+  height: 24px;
+  background: url('./img/direction.svg') no-repeat center /cover;
+}
+
+.nav__item_marker {
+  background: url('./img/streetview.jpg') no-repeat center /cover;
+  padding: 20px 0 20px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.nav__icon_marker {
+  background-image: url('./img/marker.svg');
+}
+
+.info__km {
+  color: #C4C4C4;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.info__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
