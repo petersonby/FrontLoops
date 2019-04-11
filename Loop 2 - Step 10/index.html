@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Challenge</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <a href="" class="header__logo">
+          <img src="./img/logo.png" alt="" class="header__logo-img">
+        </a>
+
+        <input type="search" class="header__search" placeholder="Search">
+
+        <nav class="header__top-menu menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Profile</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Connections</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Interest</a></li>
+            <li class="menu__item"><a href="" class="menu__link menu__link_red">Try premium</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__profile profile">
+          <a href="" class="profile__msg"></a>
+          <a href="" class="profile__note"></a>
+          <a href="" class="profile__add"></a>
+          <a href="" class="profile__user">
+            <img src="" alt="" class="profile__user-avatar">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="header__menu menu-second">
+      <div class="container">
+        <ul class="menu-second__list">
+          <li class="menu-second__item"><a href="" class="menu-second__link">Posts</a></li>
+          <li class="menu-second__item"><a href="" class="menu-second__link">Background</a></li>
+          <li class="menu-second__item"><a href="" class="menu-second__link">Recommendations</a></li>
+          <li class="menu-second__item"><a href="" class="menu-second__link">Following</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <div class="container">
+      <aside class="sidebar-left user">
+        <img src="./img/bill-gates-avatar.png" alt="Bill" class="user__img">
+
+        <h2 class="user__name">Bill Gates</h2>
+        <h3 class="user__status">Microsoft Founder</h3>
+        <p class="user__location">Greater Seattle Area</p>
+
+        <button class="btn btn__fill">Follow</button>
+        <button class="btn btn__not-fill">Connect</button>
+
+        <div class="user__count count">
+          <p class="count__item">
+            <span>200</span>
+            connections
+          </p>
+          <p class="count__item">
+            <span>1.9M</span>
+            followers
+          </p>
+        </div>
+
+        <div class="user__links">
+          <a href="linkedin.com/in/bill" class="user__link user__link_in">linkedin.com/in/bill</a>
+          <a href="billgates.com" class="user__link user__link_site">billgates.com</a>
+        </div>
+
+        <button class="btn user__export">Export page as PDF</button>
+      </aside>
+
+      <main class="main">
+        <section class="section posts">
+          <header class="section__header section__header_flex">
+            <h2 class="section__title">Posts</h2>
+
+            <div class="section__buttons">
+              <button class="btn section__button"></button>
+              <button class="btn section__button section__button_right"></button>
+            </div>
+          </header>
+
+          <div class="section__info posts__info">
+            <div class="posts__item">
+              <img src="./img/article1.jpg" alt="3 Myths" class="posts__img">
+              <h3 class="posts__title">3 Myths that confuse top-managers</h3>
+              <time class="posts__time" datetime="2016-02-19">February 19, 2016</time>
+            </div>
+
+            <div class="posts__item">
+              <img src="./img/article2.jpg" alt="How much" class="posts__img">
+              <h3 class="posts__title">How much do we spend on hot drinks</h3>
+              <time class="posts__time" datetime="2016-02-19">February 19, 2016</time>
+            </div>
+
+            <div class="posts__item">
+              <img src="./img/article3.jpg" alt="" class="posts__img">
+              <h3 class="posts__title">Good news you might have notice</h3>
+              <time class="posts__time" datetime="2016-02-19">February 19, 2016</time>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="section background">
+          <header class="section__header">
+            <h2 class="section__title">Background</h2>
+          </header>
+
+          <div class="section__info">
+            <h3 class="background__title">Summary</h3>
+            <div class="background__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt ipsam quae soluta voluptatibus quod voluptate tempora ex veritatis deleniti a, praesentium provident aliquid enim iure ad, odio iste delectus neque?
+              Et blanditiis officiis similique beatae quis, ullam totam saepe corporis dolorem odit asperiores aut aspernatur tempora in soluta modi repudiandae, reiciendis corrupti? Beatae autem dignissimos illum officia laudantium aliquam deserunt.
+              Minus incidunt non maiores excepturi velit omnis voluptatibus cupiditate, in alias doloremque, ullam sunt nihil nesciunt facilis laborum. Iste impedit rem aperiam soluta iusto qui hic distinctio tempore, voluptates esse?
+              Neque sequi eaque vitae ex, nulla facilis.
+            </div>
+
+            <h3 class="background__title">Experience</h3>
+            <div class="background__experience experience">
+              <div class="experience__item">
+                <div class="experience__info">
+                  <p class="experience__date">2000 - present</p>
+                  <p class="experience__position">Co-founder, Chairman</p>
+                  <a href="" class="experience__company">Microsoft</a>
+                </div>
+                <img src="./img/logo-microsoft.png" alt="Microsoft" class="experience__logo">
+              </div>
+
+              <div class="experience__item">
+                <div class="experience__info">
+                  <p class="experience__date">1992 - 1999</p>
+                  <p class="experience__position">Senior Developer</p>
+                  <a href="" class="experience__company">Youtube</a>
+                </div>
+                <img src="./img/logo-youtube.png" alt="Youtube" class="experience__logo">
+              </div>
+
+            </div>
+
+            <h3 class="background__title">Education</h3>
+            <div class="background__experience experience education">
+              <div class="experience__item education__item">
+                <div class="experience__info">
+                  <p class="experience__date">1973 - 1975</p>
+                  <p class="experience__position">Harvard University</p>
+                  <a href="" class="experience__company">BS Computer Science</a>
+                </div>
+              </div>
+
+              <div class="experience__item">
+                <div class="experience__info">
+                  <p class="experience__date">1960 - 1973</p>
+                  <p class="experience__position">Lakeside School, Seattle</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="background__title">Skills</h3>
+            <div class="skills">
+              <div class="skills__item">
+                <span class="skills__number">74</span>
+                <h4 class="skills__title">Social Media Marketing</h4>
+                <div class="skills__people">
+                  <img src="./img/avatar.jpg" alt="" class="skills__people-img">
+                  <img src="./img/avatar2.jpg" alt="" class="skills__people-img">
+                  <img src="./img/avatar3.jpg" alt="" class="skills__people-img">
+                  <a href="" class="skills__people-more">71+</a>
+                </div>
+              </div>
+              
+              <div class="skills__item">
+                <span class="skills__number">64</span>
+                <h4 class="skills__title">Web Development</h4>
+                <div class="skills__people">
+                  <img src="./img/avatar2.jpg" alt="" class="skills__people-img">
+                  <img src="./img/avatar.jpg" alt="" class="skills__people-img">
+                  <img src="./img/avatar3.jpg" alt="" class="skills__people-img">
+                  <a href="" class="skills__people-more">17+</a>
+                </div>
+              </div>
+
+            </div>
+
+            <h3 class="background__title">Interests</h3>
+            <ul class="interests">
+              <li class="interests__item">Wireless Industry</li>
+              <li class="interests__item">Photography</li>
+              <li class="interests__item">Finish</li>
+              <li class="interests__item">Him</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="section recomend">
+          <header class="section__header section__header_flex">
+            <h2 class="section__title">Recomendations</h2>
+
+            <div class="section__buttons">
+              <button class="btn section__button"></button>
+              <button class="btn section__button section__button_right"></button>
+            </div>
+          </header>
+
+          <div class="section__info recomend__info">
+            <div class="recomend__item">
+              <div class="recomend__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusamus nesciunt molestiae, laborum culpa obcaecati maiores voluptate voluptatum veritatis libero!
+              </div>
+              <div class="more__user">
+                <img src="./img/avatar3.jpg" alt="Steve Jobs" class="more__user-img">
+                <div class="more__user-info">
+                  <h3 class="more__user-title">Steve Jobs</h3>
+                  <p class="more__user-job">Apple</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="recomend__item">
+              <div class="recomend__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusamus nesciunt molestiae, laborum culpa obcaecati maiores voluptate voluptatum veritatis libero!
+              </div>
+              <div class="more__user">
+                <img src="./img/avatar3.jpg" alt="Steve Jobs" class="more__user-img">
+                <div class="more__user-info">
+                  <h3 class="more__user-title">Steve Jobs</h3>
+                  <p class="more__user-job">Apple</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="recomend__item">
+              <div class="recomend__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusamus nesciunt molestiae, laborum culpa obcaecati maiores voluptate voluptatum veritatis libero!
+              </div>
+              <div class="more__user">
+                <img src="./img/avatar3.jpg" alt="Steve Jobs" class="more__user-img">
+                <div class="more__user-info">
+                  <h3 class="more__user-title">Steve Jobs</h3>
+                  <p class="more__user-job">Apple</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section follow">
+          <header class="section__header">
+            <h2 class="section__title">Following</h2>
+          </header>
+
+          <div class="section__info">
+            <div class="follow__items">
+              <div class="follow__item">
+                <div class="follow__img-wrap">
+                  <img src="./img/logo-microsoft.png" alt="Microsoft" class="follow__img">
+                </div>
+
+                <h3 class="follow__title">Microsoft</h3>
+                <button class="btn follow__btn">Follow</button>
+              </div>
+
+              <div class="follow__item">
+                <div class="follow__img-wrap">
+                  <img src="./img/logo-amazon.jpg" alt="Amazon" class="follow__img">
+                </div>
+
+                <h3 class="follow__title">Amazon</h3>
+                <button class="btn follow__btn">Follow</button>
+              </div>
+
+              <div class="follow__item">
+                <div class="follow__img-wrap">
+                  <img src="./img/logo-microsoft.png" alt="Microsoft" class="follow__img">
+                </div>
+
+                <h3 class="follow__title">Microsoft</h3>
+                <button class="btn follow__btn">Follow</button>
+              </div>
+
+              <div class="follow__item">
+                <div class="follow__img-wrap">
+                  <img src="./img/logo-amazon.jpg" alt="Amazon" class="follow__img">
+                </div>
+
+                <h3 class="follow__title">Amazon</h3>
+                <button class="btn follow__btn">Follow</button>
+              </div>
+            </div>
+
+            <button class="btn btn__not-fill">See all (20)</button>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar-right more">
+        <h2 class="more__title">People also viewed</h2>
+        
+        <div class="more__user">
+          <img src="./img/avatar.jpg" alt="Sergey Brin" class="more__user-img">
+          <div class="more__user-info">
+            <h3 class="more__user-title">Sergey Brin</h3>
+            <p class="more__user-job">Google</p>
+          </div>
+        </div>
+
+        <div class="more__user">
+          <img src="./img/avatar2.jpg" alt="Jeffry Bezos" class="more__user-img">
+          <div class="more__user-info">
+            <h3 class="more__user-title">Jeffry Bezos</h3>
+            <p class="more__user-job">Amazon</p>
+          </div>
+        </div>
+
+        <div class="more__user">
+          <img src="./img/avatar3.jpg" alt="Steve Jobs" class="more__user-img">
+          <div class="more__user-info">
+            <h3 class="more__user-title">Steve Jobs</h3>
+            <p class="more__user-job">Apple</p>
+          </div>
+        </div>
+        
+        <h2 class="more__title">More influencers</h2>
+
+        <div class="more__slider slider">
+          <button class="btn slider__btn"></button>
+          <button class="btn slider__btn"></button>
+
+          <div class="slider__main">
+            <div class="more__user">
+              <img src="./img/avatar3.jpg" alt="Steve Jobs" class="more__user-img">
+              <div class="more__user-info">
+                <h3 class="more__user-title">Steve Jobs</h3>
+                <p class="more__user-job">Apple</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    Linkedin Corporation (c) 2019
+  </footer>
+</body>
+</html>
