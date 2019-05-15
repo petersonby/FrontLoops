@@ -1,0 +1,98 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 70px 0;
+  background-color: #2980B9;
+  min-height: 100vh;
+  font-family: 'Roboto', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.poster {
+  position: relative;
+  margin-right: 60px;
+}
+
+.poster__img {
+  width: 230px;
+  height: 350px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 15px 20px -10px rgba(0,0,0,0.5);
+}
+
+.poster__info {
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+  box-shadow: 5px 65px 20px -10px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 270px;
+  padding-top: 350px;
+  padding-bottom: 20px;
+  margin-bottom: 48px;
+  transform: scale(0);
+  transition: transform .3s cubic-bezier(.65, 1.95, .03, .32);
+}
+
+.poster:hover .poster__info {
+  transform: scale(1);
+}
+
+.poster__btn {
+  border: none;
+  border-radius: 0 0 5px 5px;
+  background: #2F2F2F;
+  height: 48px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -48px;
+  width: 100%;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+
+.poster__btn:hover {
+  background: #484747;
+}
+
+.poster__title {
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.poster__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #aaa;
+}
+
+.poster__price {
+  text-align: center;
+  margin: 0;
+  color: #2BCD71;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.poster__price_old {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 14px;
+}
