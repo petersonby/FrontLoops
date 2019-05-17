@@ -1,0 +1,79 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: url('./img/background.jpg') no-repeat center /cover;
+  min-height: 100vh;
+  font-family: 'Roboto', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kanye {
+  border-radius: 10px;
+  display: flex;
+  background: url('./img/kanye.jpg') no-repeat center /cover;
+  width: 400px;
+  height: 405px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.8);
+}
+
+.kanye__west,
+.kanye__east {
+  flex: 0 0 50%;
+}
+
+.kanye__east {
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  perspective: 1000px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 15px;
+}
+
+.kanye__east::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./img/kanye.jpg') no-repeat 88% 44% /cover;
+  border-radius: 0 10px 10px 0;
+  border-left: 2px solid transparent;
+  transition: transform .5s ease, border-color .5s ease;
+  transform-origin: 0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.kanye:hover .kanye__east::before {
+  transform: rotateY(-45deg);
+  border-color: rgba(255,255,255,0.3);
+}
+
+.kanye__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kanye__btn {
+  background: 0;
+  border: none;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  cursor: pointer;
+  fill: #666;
+  transition: fill .3s ease;
+}
+
+.kanye__btn:hover {
+  fill: #000;
+}
