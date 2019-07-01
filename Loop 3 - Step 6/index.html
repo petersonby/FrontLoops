@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 3 - Step 6</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="" class="breadcrumbs__link">
+          Cart
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="" class="breadcrumbs__link">
+          Customer information
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="" class="breadcrumbs__link">
+          Shipping method
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        Payment method
+      </li>
+    </ul>
+
+    <div class="main">
+      <div class="main__container">
+        <section class="section">
+          <h2 class="section__title">Payment information</h2>
+          <form action="" class="form">
+            <label class="form__label">
+              <p>Card number</p>
+              <input type="text" class="form__input" placeholder="**** **** **** ****">
+            </label>
+            <div class="form__row">
+              <label class="form__label">
+                <p>Card holder</p>
+                <input type="text" class="form__input" placeholder="Michael Jordan">
+              </label>
+              <label class="form__label">
+                <p>Exp. Date</p>
+                <input type="text" class="form__input" placeholder="03/19">
+              </label>
+              <label class="form__label">
+                <p>CVC</p>
+                <input type="text" class="form__input" placeholder="***">
+              </label>
+            </div>
+          </form>
+        </section>
+
+        <section class="section">
+          <h2 class="section__title">Billing information</h2>
+          <form action="" class="form">
+            <label class="form__radio radio">
+              <input type="radio" name="radio" class="sr-only">
+              <span class="radio__new"></span>
+              <span class="radio__label">Same as the shipping address</span>
+            </label>
+            <label class="form__radio radio">
+              <input type="radio" name="radio" class="sr-only">
+              <span class="radio__new"></span>
+              <span class="radio__label">Use a different billing address</span>
+            </label>
+          </form>
+        </section>
+
+        <div class="main__links">
+          <a href="#" class="main__link">Return to shipping method</a>
+          <button class="btn" type="submit">Complete order</button>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="cart">
+          <div class="cart__item">
+            <div class="cart__img">
+              <img src="./img/order.jpg" alt="chocolate bar">
+              <div class="cart__count">2</div>
+            </div>
+            <h3 class="cart__title">Chocolate bar</h3>
+            <span class="cart__cost">$2.49</span>
+          </div>
+        </div>
+
+        <div class="sidebar__desc">
+          <p class="sidebar__row">Subtotal <span>$4.49</span></p>
+          <p class="sidebar__row">Shipping <span>$3.52</span></p>
+        </div>
+
+        <p class="sidebar__row sidebar__row_total">Total <span>$8.01</span></p>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

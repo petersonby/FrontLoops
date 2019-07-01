@@ -1,0 +1,147 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #FAFAFA;
+  min-height: 100vh;
+  font-family: 'Roboto', Arial, sans-serif;
+  padding-top: 20px;
+}
+
+.container {
+  max-width: 1190px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item {
+  margin-right: 20px;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+}
+
+.breadcrumbs__item::after {
+  content: '-';
+  color: #ccc;
+  position: absolute;
+  right: -12.5px;
+  top: 0;
+}
+
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Sections */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.main__container {
+  margin-right: 25px;
+  flex: 1 1 700px;
+}
+
+.section {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px #ddd;
+  margin-bottom: 25px;
+  padding: 30px;
+}
+
+.section__title {
+  margin: 0;
+  margin-bottom: 35px;
+  color: #000;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  margin-bottom: 20px;
+}
+
+.form__label p {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form__input:focus {
+  outline: none;
+  border-color: #aaa;
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__row .form__label:first-child {
+  flex: 1 0 auto;
+}
+
+.form__row .form__label {
+  margin-right: 25px;
+}
+
+.form__row .form__label:last-child {
+  margin-right: 0;
+}
+
+.form__input::placeholder {
+  color: #757575;
+  font-family: inherit;
+  font-weight: 500;
+
+}
