@@ -7,7 +7,7 @@ body {
   background: #FAFAFA;
   min-height: 100vh;
   font-family: 'Roboto', Arial, sans-serif;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .container {
@@ -63,7 +63,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 .main__container {
@@ -114,6 +113,7 @@ body {
   color: #000;
   font-weight: 500;
   font-size: 14px;
+  transition: border .3s ease;
 }
 
 .form__input:focus {
@@ -143,5 +143,226 @@ body {
   color: #757575;
   font-family: inherit;
   font-weight: 500;
+}
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.radio__new {
+  height: 25px;
+  flex: 0 0 25px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin-right: 10px;
+  position: relative;
+  transition: background .3s ease;
+}
+
+.radio__new::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #5F86ED;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%)scale(0);
+  transition: transform .3s ease;
+}
+
+.radio:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.sr-only:checked+.radio__new::before {
+  transform: translate(-50%, -50%)scale(1);
+}
+.radio:hover .radio__new {
+  background: #eee;
+}
+
+.radio__label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__link {
+  color: #5F86ED;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.main__link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  background: #5F86ED;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 20px;
+  color: #fff;
+  font-weight: 500;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+
+.btn:hover {
+  background: #4263BB;
+}
+
+/* Sidebar */
+
+.sidebar {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px #ddd;
+  margin-bottom: 25px;
+  padding: 30px;
+  flex: 1 1 435px;
+}
+
+.cart__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cart__img {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-right: 20px;
+  padding: 10px 5px;
+}
+
+.cart__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cart__count {
+  position: absolute;
+  right: -11px;
+  top: -11px;
+  color: #fff;
+  border-radius: 50%;
+  background: #5F86ED;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cart__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.cart__cost {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.cart__item {
+  margin-bottom: 20px;
+}
+
+.cart {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.sidebar__desc {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.sidebar__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.sidebar__row_total {
+  margin-bottom: 0;
+}
+
+.sidebar__row_total span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 769px) {
+  .main {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .sidebar, 
+  .main__container {
+    flex: 1 1 auto;
+  }
+
+  .main__container {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 545px) {
+  .form__row {
+    flex-wrap: wrap;
+  }
+
+  .form__row .form__label:first-child {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+
+  .form__row .form__label {
+    flex: 1 1 auto;
+  }
 }
